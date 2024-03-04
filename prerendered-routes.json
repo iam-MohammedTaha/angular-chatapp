@@ -1,0 +1,9 @@
+{
+  "routes": [
+    "/",
+    "/home",
+    "/login",
+    "/profile",
+    "/sign-up"
+  ]
+}
