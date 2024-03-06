@@ -28,6 +28,7 @@ import { MatListModule} from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { DateDisplayPipe } from './pipes/date-display.pipe'
 import { DatePipe } from '@angular/common';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,7 @@ import { DatePipe } from '@angular/common';
     MatAutocompleteModule,
     MatListModule,
     MatDividerModule,
-    provideFirebaseApp(() => initializeApp({"projectId":"angular-signup-6cb86","appId":"1:382230531281:web:fed16ebd24402f20ea09f0","storageBucket":"angular-signup-6cb86.appspot.com","apiKey":"AIzaSyDlN9mmJyEqqXhxPXSUkxIS7feuKO2smik","authDomain":"angular-signup-6cb86.firebaseapp.com","messagingSenderId":"382230531281"})), //"locationId":"us-central"
+    provideFirebaseApp(() => initializeApp(environment.firebase)), //"locationId":"us-central"
     provideAuth(() => getAuth()),
     provideStorage(() => getStorage()),
     provideFirestore(() => getFirestore()),
